@@ -1,0 +1,18 @@
+.head{
+    margin: 20px 9px;
+    background: linear-gradient(45deg,rgb(255,107,0),rgb(227,52,255));
+    width:550px;
+    padding: 15px;
+}
+.head_1{
+    color: azure;
+    text-align: center;
+}
+.container{
+    border:5px solid black;
+    margin-top: 25px;
+    width: 600px;
+}
+.msg{
+    margin-left: 92px;
+}

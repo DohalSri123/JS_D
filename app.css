@@ -1,0 +1,11 @@
+div{
+    background-color: darkslategray;
+    color: azure;
+    padding: 10px;
+    text-align: center;
+    margin: 15px;
+}
+button{
+    font-size: 15px;
+    padding: 14px 25px;
+}

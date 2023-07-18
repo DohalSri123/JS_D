@@ -1,0 +1,24 @@
+.head{
+    margin: 80px 50px;
+    background:linear-gradient(45deg,rgb(43,163,203),rgb(158,193,225));
+    padding:7px;
+    margin-top: 10px;
+}
+.head_1{
+    color: azure;
+    text-align: center;
+}
+.carder{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 50px;
+    padding:7px;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+}
+.container{
+    width:859px;
+    height: 252px;
+    box-shadow: 0 0 10px black;
+
+}

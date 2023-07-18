@@ -1,0 +1,35 @@
+.card_1{
+    display: block;
+    width: 283px;
+    height:179px;
+    border: 3px solid black;
+    text-align: center;
+    margin: 15px;
+    background: linear-gradient(45deg,black,red);
+}
+.card_2{
+    display: block;
+    width: 283px;
+    height:179px;
+    border: 3px solid black;
+    text-align: center;
+    margin: 15px;
+    background: linear-gradient(45deg,black,rgb(242, 155, 5));
+}
+.card_3{
+    display: block;
+    width: 283px;
+    height:179px;
+    border: 3px solid black;
+    text-align: center;
+    margin: 15px;
+    background: linear-gradient(45deg,black,gold);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+h5,h2,h3,p{
+    color: azure;
+}

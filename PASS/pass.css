@@ -1,0 +1,15 @@
+.head{
+    margin: 25px 50px;
+    background:linear-gradient(45deg,rgb(56,80,80),rgb(255,162,0));
+    padding:7px;
+}
+.head_1{
+    color: azure;
+    text-align: center;
+}
+.carder{
+    margin: 25px 50px;
+    padding:7px;
+    text-align: center;
+
+}
