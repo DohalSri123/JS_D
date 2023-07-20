@@ -1,0 +1,39 @@
+.head{
+   
+    width: 600px;
+    height: 60px;
+    border: 3px solid black;
+    text-align: center;
+    background-color: aquamarine;
+    color:azure;
+}
+.container{
+    text-align: center;
+    height: 100px;
+    width: 594px;
+    margin:10px ;
+    margin-top: 20px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: coral;
+}
+.range{
+    margin-top: 37px;
+    margin-left: 10px;
+    align-items: center;
+    text-align: center;
+}
+.form{
+    margin-top: 37px;
+    margin-left: 10px;
+    align-items: center;
+    text-align: center;
+
+}
+.number{
+    width: 70px;
+    height:70px;
+    border:3px solid black;
+
+}

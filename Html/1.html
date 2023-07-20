@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiple Data Sets</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h2>Multiple Data Sets</h2>
+
+  <form id="dataForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" required><br><br>
+
+    <input type="submit" value="Add Data">
+  </form>
+
+  <div id="displayData"></div>
+
+  <script >
+    document.getElementById("dataForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  var name = document.getElementById("name").value;
+  var age = document.getElementById("age").value;
+
+  // Retrieve existing data sets from localStorage
+  var storedDataSets = localStorage.getItem('dataSets');
+  var dataSets = [];
+
+  if (storedDataSets) {
+    // Parse the stored JSON string back into an array of objects
+    dataSets = JSON.parse(storedDataSets);
+  }
+
+  // Create a new data set object
+  var newDataSet = {
+    name: name,
+    age: age
+  };
+
+  // Add the new data set to the array
+  dataSets.push(newDataSet);
+
+  // Store the updated data sets in localStorage
+  localStorage.setItem('dataSets', JSON.stringify(dataSets));
+
+  // Display the data sets
+  displayDataSets(dataSets);
+});
+
+// Display the data sets in the browser
+function displayDataSets(dataSets) {
+  var displayData = document.getElementById("displayData");
+  displayData.innerHTML = "";
+
+  for (var i = 0; i < dataSets.length; i++) {
+    var dataSet = dataSets[i];
+    var name = dataSet.name;
+    var age = dataSet.age;
+
+    var dataSetElement = document.createElement("div");
+    dataSetElement.innerHTML = "Name: " + name + "<br>Age: " + age + "<hr>";
+
+    displayData.appendChild(dataSetElement);
+  }
+}
+
+// Initial display of data sets when the page loads
+var storedDataSets = localStorage.getItem('dataSets');
+
+if (storedDataSets) {
+  var parsedDataSets = JSON.parse(storedDataSets);
+  displayDataSets(parsedDataSets);
+} else {
+  displayDataSets([]);
+}
+
+  </script>
+</body>
+</html>
